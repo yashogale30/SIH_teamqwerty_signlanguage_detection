@@ -1,0 +1,162 @@
+/* General Styling for the Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Soft blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Styling for the Main Heading */
+.main-heading {
+    font-size: 3em;
+    font-weight: 700;
+    color: #00695c; /* Dark green color for heading */
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    width: 100%;
+    z-index: 1000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Content Wrapper */
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Slight padding from screen edges */
+    height: 80%;
+    padding-top: 20px;
+    background-color: #ffffff; /* White background for content area */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+}
+
+/* Camera Window Styling */
+#camera {
+    flex: 1;
+    height: 100%;
+    background-color: #b2dfdb; /* Light greenish-blue for camera background */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); /* Inset shadow for depth */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column; /* This will stack the video and buttons vertically */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Camera Controls Styling (Place buttons below the video) */
+#camera-controls {
+    margin-top: 10px; /* Space between video and buttons */
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Make the buttons take up full width below the video */
+    padding: 10px;
+}
+
+/* Styling for the Camera On/Off Buttons */
+.camera-btn {
+    background-color: #00796b; /* Primary button color */
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.camera-btn:hover {
+    background-color: #004d40; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.camera-btn:active {
+    background-color: #00251a; /* Even darker color on click */
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+
+
+/* Right Section Styling (Audio Controls + Output) */
+#right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+/* Styling for the Audio Controls */
+#audio-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for the Microphone Icon */
+#audio-controls i {
+    font-size: 2em;
+    color: #004d40; /* Dark green */
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#audio-controls i:hover {
+    color: #00796b;
+    transform: scale(1.1);
+}
+
+/* Styling for the Audio Element */
+#audio-controls audio {
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Styling for the Recognized Text Section */
+#output {
+    width: 100%;
+    text-align: left;
+    height: 100%;
+}
+
+#output h2 {
+    font-size: 1.5em;
+    color: #004d40;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#output p {
+    font-size: 1.2em;
+    color: #555555;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    overflow-y: auto; /* Allow scrolling if text overflows */
+}
+
+/* Adding a subtle hover effect on the recognized text */
+#output p:hover {
+    background-color: #eeeeee; /* Slight color change on hover */
+}

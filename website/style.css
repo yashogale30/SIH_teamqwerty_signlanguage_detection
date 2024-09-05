@@ -1,0 +1,104 @@
+/* General Styling for the Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Stack heading on top of content */
+}
+
+/* Styling for the Main Heading */
+.main-heading {
+    font-size: 3em;
+    font-weight: 700;
+    color: #00796b;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px; /* Add padding to move the heading down */
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Content Wrapper */
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%; /* Adjust height to allow space for the heading */
+    padding-top: 20px; /* Add padding to prevent overlap */
+}
+
+/* Camera Window Styling */
+#camera {
+    flex: 1;
+    height: 100%;
+    background-color: #eceff1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+/* Right Section Styling (Audio Controls + Output) */
+#right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content from the top */
+    align-items: flex-start;
+    height: 100%;
+}
+
+/* Styling for the Audio Controls */
+#audio-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Add margin to move audio controls down */
+}
+
+/* Styling for the Microphone Icon */
+#audio-controls i {
+    font-size: 2em;
+    color: #00796b;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Styling for the Audio Element */
+#audio-controls audio {
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+}
+
+/* Styling for the Recognized Text Section */
+#output {
+    width: 100%;
+    text-align: left;
+    height: 100%;
+}
+
+#output h2 {
+    font-size: 1.5em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#output p {
+    font-size: 1.2em;
+    color: #555555;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+}
